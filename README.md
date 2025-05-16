@@ -31,9 +31,6 @@ Data was cleaned and transformed using Power Query:
 ## 🧮 DAX Measures
 
 Custom measures were created using DAX to calculate KPIs.
-
-###
-```dax
 Total Sales = SUM('Sales'[SalesAmount])
 Total Quantity = SUM('Sales'[Quantity])
 Total Transactions = COUNTROWS('Sales')
@@ -43,6 +40,7 @@ SUMX(
     'Sales',
     'Sales'[UnitPrice] * 'Sales'[Quantity]
 )
+
 ## 📊 Visuals Included
 
 - 📊 **Bar Chart:** Total Sales by Month
