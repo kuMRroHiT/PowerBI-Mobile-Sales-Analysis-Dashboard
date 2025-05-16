@@ -31,15 +31,11 @@ Data was cleaned and transformed using Power Query:
 ## 🧮 DAX Measures
 
 Custom measures were created using DAX to calculate KPIs.
-Total Sales = SUM('Sales'[SalesAmount])
-Total Quantity = SUM('Sales'[Quantity])
-Total Transactions = COUNTROWS('Sales')
-Formatted Sales = FORMAT([Total Sales], "₹#,##0,,M")
-Calculated Sales = 
-SUMX(
-    'Sales',
-    'Sales'[UnitPrice] * 'Sales'[Quantity]
-)
+- Total Sales = SUM('Sales'[SalesAmount])
+- Total Quantity = SUM('Sales'[Quantity])
+- Total Transactions = COUNTROWS('Sales')
+- Formatted Sales = FORMAT([Total Sales], "₹#,##0,,M")
+- Calculated Sales = SUMX('Sales','Sales'[UnitPrice] * 'Sales'[Quantity])
 
 ## 📊 Visuals Included
 
